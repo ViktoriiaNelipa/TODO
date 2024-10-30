@@ -76,7 +76,7 @@ function render(todos) {
 // Завдання 1.6
 function updateCounter(todos) {
   const todosCount = todos.length;
-  const uncheckedTodosCount = todos.filter(t => t.checked).length;
+  const uncheckedTodosCount = todos.filter(t => !t.checked).length;
 
   itemCountSpan.innerHTML = todosCount;
   uncheckedCountSpan.innerHTML = uncheckedTodosCount;
